@@ -240,7 +240,7 @@ header.shadow {
   position: relative;
   width: 500px;
   height: 500px;
-  top: 70px;
+  top: 20px;
   z-index: 2;
 }
 
