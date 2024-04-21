@@ -251,18 +251,18 @@ header.shadow {
   object-position: center;
 }
 
-.home-bg::after {
+/* .home-bg::after {
   content: "";
   width: 70%;
   height: 70%;
   position: absolute;
   top: 2rem;
   right: 2rem;
-/*   border: 2px solid var(--main-color); */
+  border: 2px solid var(--main-color);
   border-radius: 60px;
   background: transparent;
   z-index: -1;
-}
+} */
 
 .contact-info {
   display: inline-block;
