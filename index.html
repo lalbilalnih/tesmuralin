@@ -146,68 +146,100 @@
       </div>
     </section>
 
+
+
+
+
+
+
+
+    
     <!-- Project -->
     <section class="project container" id="project">
       <!-- heading -->
       <div class="project-head">
         <h2 class="heading">Projek Kami</h2>
-        <h1>Melayani Jasa Lukis Mural Dengan Berbagai Jenis Media<h1>
-        <p>
-          Berikut adalah karya pilihan Kami  </p>    
-      </div>
-      <!-- cars container -->
-      <div class="cars-container" id="container">
-        <!-- box 1 -->
-        <div class="box">
-          <img src="img/projek1.jpg" alt="mural hitam putih">
-          <h2>PT. Nutrifood Indonesia</h2>
-        </div>
-        <!-- box 2 -->
-        <div class="box">
-          <img src="img/projek2.png" alt="mural full warna">
-          <h2>Kantor Gojek Jogja</h2>
-        </div>
-        <!-- box 3 -->
-        <div class="box">
-          <img src="img/projek3.png" alt="mural tempat cafe restoran kopi full warna">
-          <h2>Ramen Mura</h2>
-        </div>
-        <!-- box 4 -->
-        <div class="box">
-          <img src="img/projek4.jpg" alt="jasa mural untuk sekolah ">
-          <h2>Bale Padel Jogja</h2>
-        </div>
-        <!-- box 5 -->
-        <div class="box">
-          <img src="img/projek5.png" alt="jasa mural untuk cafe">
-          <h2>Avery Hotel</h2>
-        </div>
-        <!-- box 6 -->
-        <div class="box">
-          <img src="img/projek6.jpg" alt="jasa mural untuk hotel">
-          <h2>PT Farma Global Teknologi</h2>
-        </div>
+        <h1>Melayani Jasa Lukis Mural Dengan Berbagai Jenis Media</h1>
+        <p>Berikut adalah karya pilihan Kami</p>
       </div>
 
-            <!-- box 7-->
-        <div class="box">
-          <img src="img/projek4.jpg" alt="jasa mural untuk sekolah ">
-          <h2>Bale Padel Jogja</h2>
+      <!-- Project Slider -->
+      <div class="project-slider-wrapper">
+        <div class="swiper swiper-project">
+          <div class="swiper-wrapper">
+
+            <!-- SLIDE 1 : projek 1, 2, 3 -->
+            <div class="swiper-slide">
+              <div class="project-slide-box">
+                <img src="img/projek1.jpg" alt="mural hitam putih">
+                <h2>PT. Nutrifood Indonesia</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek2.png" alt="mural full warna">
+                <h2>Kantor Gojek Jogja</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek3.png" alt="mural tempat cafe restoran kopi full warna">
+                <h2>Ramen Mura</h2>
+              </div>
+            </div>
+
+            <!-- SLIDE 2 : projek 4, 5, 6 -->
+            <div class="swiper-slide">
+              <div class="project-slide-box">
+                <img src="img/projek4.jpg" alt="jasa mural untuk sekolah">
+                <h2>Bale Padel Jogja</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek5.png" alt="jasa mural untuk cafe">
+                <h2>Avery Hotel</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek6.jpg" alt="jasa mural untuk hotel">
+                <h2>PT Farma Global Teknologi</h2>
+              </div>
+            </div>
+
+            <!-- SLIDE 3 : projek 7, 8, 9 (isi sesuai project baru) -->
+            <!-- ganti src dan nama project sesuai kebutuhan -->
+            <div class="swiper-slide">
+              <div class="project-slide-box">
+                <img src="img/projek7.jpg" alt="jasa mural baru">
+                <h2>Nama Project 7</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek8.jpg" alt="jasa mural baru">
+                <h2>Nama Project 8</h2>
+              </div>
+              <div class="project-slide-box">
+                <img src="img/projek9.jpg" alt="jasa mural baru">
+                <h2>Nama Project 9</h2>
+              </div>
+            </div>
+
+          </div><!-- end swiper-wrapper -->
+        </div><!-- end swiper-project -->
+
+        <!-- Tombol Prev / Next -->
+        <div class="project-slider-btns">
+          <div class="swiper-button-prev swiper-project-prev"></div>
+          <div class="swiper-button-next swiper-project-next"></div>
         </div>
-        <!-- box 8 -->
-        <div class="box">
-          <img src="img/projek5.png" alt="jasa mural untuk cafe">
-          <h2>Avery Hotel</h2>
-        </div>
-        <!-- box 9 -->
-        <div class="box">
-          <img src="img/projek6.jpg" alt="jasa mural untuk hotel">
-          <h2>PT Farma Global Teknologi</h2>
-        </div>
-      </div>
-          
+
+      </div><!-- end project-slider-wrapper -->
     </section>
 
+
+
+
+
+
+
+
+
+
+
+          
 
     <!-- Services -->
     <section class="services container" id="services">
@@ -483,6 +515,42 @@
     <!-- link to JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+
+
+
+
+ <script>
+      const projectSwiper = new Swiper(".swiper-project", {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-project-next",
+          prevEl: ".swiper-project-prev",
+        },
+        speed: 600,
+      });
+    </script>
+
+
+
+
+
+
+      
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+          
   </body>
 </html>
